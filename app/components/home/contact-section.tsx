@@ -38,7 +38,7 @@ export default function ContactSection() {
       >
         <a
           href="mailto:mouazalbari@gmail.com"
-          className="px-6 py-3 bg-pink-600 hover:bg-pink-700 rounded-xl font-semibold shadow-lg transition-all"
+              className="py-3 px-6 button-primary text-center text-white font-medium cursor-pointer rounded-lg max-w-[200px] bg-gradient-to-r from-purple-600 to-cyan-600 hover:opacity-90 transition"
         >
           Email
         </a>

@@ -12,9 +12,9 @@ export const Navbar = () => {
       <div className="w-full container h-full flex items-center justify-between m-auto ">
         {/* Logo + Name */}
         <Link href="#about-me" className="flex items-center">
-          <div className=" text-2xl md:flex text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 md:self font-bold  ">
+          <div className=" text-2xl items-center md:flex cursive text-transparent max-md:text-white bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 md:self font-bold  ">
        
-           {" I'm Mouaz Albar"}
+           <span className="text-4xl">M</span>{"ouaz "}
           </div>
         </Link>
 

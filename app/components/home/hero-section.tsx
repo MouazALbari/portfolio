@@ -34,7 +34,7 @@ const HeroSection = () => {
             variants={slideInFromTop}
             className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
           >
-            <h1 className="Welcome-text text-[13px] tracking-wider uppercase">
+            <h1 className="Welcome-text max-md:!text-white text-[13px] tracking-wider uppercase">
           Senior Frontend Engineer
             </h1>
           </motion.div>
