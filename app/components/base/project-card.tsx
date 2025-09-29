@@ -6,8 +6,8 @@ type ProjectCardProps = {
   title?: string;
   description?: string;
   link?: string;
-  skills?: string[]; 
-  tools?: string[];  
+  skills?: string[];
+  tools?: string[];
 };
 
 export default function ProjectCard({
@@ -17,12 +17,13 @@ export default function ProjectCard({
   link,
   tools = [],
 }: ProjectCardProps) {
+
   return (
     <Link
       href={link ?? ""}
-      target="_blank"
+      target={link !== "/" ? "_blank" : undefined}
       rel="noreferrer noopener"
-      className="group relative mb-30 !cursor-grab overflow-hidden rounded-2xl shadow-lg border border-[#2A0E61] hover:shadow-purple-500/30 transition-all duration-300"
+      className="group relative mb-30 !cursor-grab overflow-hidden rounded-2xl shadow-lg  hover:shadow-purple-500/30 transition-all duration-300"
     >
       {/* ✅ صورة المشروع */}
       <div className="overflow-hidden">
@@ -39,9 +40,9 @@ export default function ProjectCard({
         <h2 className="text-2xl font-semibold text-white group-hover:text-cyan-400 transition-colors">
           {title}
         </h2>
-        <p className="mt-3  text-sm text-gray-300 line-clamp-5">{description}</p>
-
-       
+        <p className="mt-3  text-sm text-gray-300 line-clamp-5">
+          {description}
+        </p>
 
         {tools.length > 0 && (
           <div className="mt-4 h-20">

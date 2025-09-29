@@ -106,7 +106,7 @@ export const PROJECTS: ProjectCardProps[] = [
     description:
       "A digital transformation project automating essential services for Ras Al Khaimah government. I implemented secure, scalable solutions for document management, service requests, and public accessibility, ensuring usability, performance, and compliance with modern standards of e-government systems.",
     image: "/projects/rak.webp",
-    link: "https://example.com",
+    link: "/",
     tools: ["Next.js", "Tailwind CSS"],
   },
   {
