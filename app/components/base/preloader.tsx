@@ -34,28 +34,24 @@ export default function Preloader() {
           transition={{ duration: 1.5, ease: "easeInOut" }}
           className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black overflow-hidden"
         >
-          {/* 🌌 خلفية النجوم */}
           <MyStars />
 
-          {/* ✨ Nebula Glow */}
           <motion.div
             className="absolute w-[150%] h-[150%] bg-gradient-radial from-purple-800/40 via-cyan-700/20 to-transparent blur-3xl"
             animate={{ rotate: 360 }}
             transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
           />
 
-          {/* 🔮 العنوان */}
           <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
             className="relative z-10 text-2xl lg:text-4xl cursive md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 drop-shadow-lg text-center"
           >
-            👋 Hey there!  ,<span className="cursive"> I'm Mouaz</span><br />
+            👋 Hey there!  ,<span className="cursive"> {"I'm Mouaz"}</span><br />
             <span className="text-white text-2xl my-4"> </span>
           </motion.h1>
 
-          {/* ⭕ دائرة التحميل */}
           <div className="relative z-10 mt-12 w-40 h-40 flex items-center justify-center">
             {/* النص يبقى ثابت */}
             <span className="absolute text-white font-semibold text-2xl">
@@ -101,7 +97,6 @@ export default function Preloader() {
             </motion.div>
           </div>
 
-          {/* ✨ Subtitle */}
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -111,7 +106,6 @@ export default function Preloader() {
             🚀 Crafting your cosmic experience...
           </motion.p>
 
-          {/* نبضة عند الانتهاء */}
           {progress === 100 && (
             <motion.div
               className="absolute w-[200%] h-[200%] bg-gradient-radial from-purple-500/30 to-transparent"
