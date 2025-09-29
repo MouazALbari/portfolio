@@ -29,7 +29,7 @@ function RotatingStars() {
 }
 function MyStars() {
   return (
-    <div className="fixed left-0 top-0 bottom-0 right-0 w-screen h-screen -z-0">
+    <div className="fixed left-0 top-0 bottom-0 right-0 w-screen h-screen -z-10">
       {" "}
       <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
         {" "}

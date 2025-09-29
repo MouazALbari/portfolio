@@ -6,7 +6,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className=" w-screen z-30 relative  min-h-screen bg-transparent  text-white flex flex-col items-center justify-center px-8 py-20"
+      className=" px-8 lg:px-0 m-auto container z-30 relative  min-h-screen bg-transparent  text-white flex flex-col items-center justify-center py-20"
     >
       {/* Title */}
       <motion.h2
@@ -34,7 +34,7 @@ export default function ContactSection() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.4 }}
-        className="flex gap-6"
+        className="flex gap-6 text-center lg:flex-row flex-col"
       >
         <a
           href="mailto:mouazalbari@gmail.com"

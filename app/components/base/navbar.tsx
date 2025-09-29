@@ -9,10 +9,10 @@ export const Navbar = () => {
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001427] backdrop-blur-md z-50 px-10">
       {/* Navbar Container */}
-      <div className="w-full h-full flex items-center justify-between m-auto px-[10px]">
+      <div className="w-full container h-full flex items-center justify-between m-auto ">
         {/* Logo + Name */}
         <Link href="#about-me" className="flex items-center">
-          <div className="hidden text-2xl font-bold md:flex text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 md:selffont-bold ml-[10px] ">
+          <div className=" text-2xl md:flex text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 md:self font-bold  ">
        
            {" I'm Mouaz Albar"}
           </div>

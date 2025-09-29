@@ -26,7 +26,7 @@ const HeroSection = () => {
       <motion.div
         initial="hidden"
         animate="visible"
-        className="flex flex-row items-center justify-center container mx-auto px-20 lg:px-0 mt-20 w-full z-[20]"
+        className="flex flex-row items-center justify-center container mx-auto px-8 lg:px-0 mt-20 w-full z-[20]"
       >
         <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
           {/* Title */}

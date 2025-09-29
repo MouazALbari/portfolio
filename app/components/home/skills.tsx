@@ -19,7 +19,7 @@ export const Skills = () => {
     >
       <SkillText />
 
-      <div className="flex flex-col lg:gap-14 gap-8 items-center">
+      <div className="flex relative z-10 flex-col lg:gap-14 gap-8 items-center">
         {rows.map((row, rowIndex) => (
           <div
             key={rowIndex}

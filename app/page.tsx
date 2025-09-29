@@ -35,7 +35,7 @@ useEffect(() => {
     <main className="bg-[#030014]">
       <div
         ref={containerRef}
-        className="flex flex-col" 
+        className="flex flex-col relative z-10" 
       >
         <HeroSection />
         <AboutSection />
