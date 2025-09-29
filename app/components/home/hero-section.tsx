@@ -58,7 +58,7 @@ const HeroSection = () => {
             variants={slideInFromLeft(0.8)}
             className="text-lg text-gray-300 my-3 max-w-[700px] leading-relaxed"
           >
-            I’m a Frontend Engineer with 5+ years of experience building 
+            I’m Mouaz Albari a Frontend Engineer with 5+ years of experience building 
             high-performing web apps using React, Next.js, and modern 
             JavaScript ecosystems. 
           </motion.p>
