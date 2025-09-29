@@ -6,7 +6,7 @@ export default function AboutSection() {
   return (
     <section
       id="about-me"
-      className="w-screen relative bg-transparent text-white flex items-center justify-center px-8 py-30"
+      className="w-screen z-10 relative bg-transparent text-white flex items-center justify-center px-8 py-30"
     >
       <div className="max-w-5xl w-full text-center">
         {/* Title */}

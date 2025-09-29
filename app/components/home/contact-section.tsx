@@ -6,7 +6,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className=" px-8 lg:px-0 m-auto container z-30 relative  min-h-screen bg-transparent  text-white flex flex-col items-center justify-center py-20"
+      className=" px-8 lg:px-0 z-10 relative m-auto container e  min-h-screen bg-transparent  text-white flex flex-col items-center justify-center py-20"
     >
       {/* Title */}
       <motion.h2

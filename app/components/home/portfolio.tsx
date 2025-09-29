@@ -15,7 +15,7 @@ export default function PortfolioSection() {
   return (
     <section
       id="projects"
-      className="flex flex-col container mx-auto items-center justify-center py-20"
+      className="flex flex-col z-10 relative  container mx-auto items-center justify-center py-20"
     >
       <motion.h2
         initial={{ y: 80 }}
