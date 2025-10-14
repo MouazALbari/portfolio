@@ -153,7 +153,7 @@ export const PROJECTS: ProjectCardProps[] = [
     title: "I Tabib",
     description:
       "A medical consultation application, where you can book a private appointment with doctors in any specialty you need. You can also upload your medical history within your profile and join the appointment with your doctor by text-chatting, audio-calling, or video-calling. Additionally there is a standalone application for doctors, allowing them to enter and attend their appointments, prescribe the appropriate medications for each patient, and follow up with the patient's medical history through the app.",
-    image: "/projects/itabib.png",
+    image: "/projects/itabib-app.png",
     link: "https://itabib.darsoft.net/patient-ui/sign-in",
     tools: ["React", "Css", "Sass", "REST APIs", "Redux","socket"],
   },

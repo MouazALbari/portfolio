@@ -32,7 +32,7 @@ export default function ProjectCard({
           alt={title ?? ""}
           width={800}
           height={600}
-          className="w-full h-52 object-cover group-hover:scale-105 transition-transform duration-300"
+          className="w-full h-52 object-contain object-top origin-top group-hover:scale-105 transition-transform duration-300"
         />
       </div>
 
