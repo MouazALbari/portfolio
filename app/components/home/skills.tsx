@@ -23,7 +23,7 @@ export const Skills = () => {
         {rows.map((row, rowIndex) => (
           <div
             key={rowIndex}
-            className="grid f gap-6  md:gap-10"
+            className="grid f gap-4  md:gap-10"
             style={{
               gridTemplateColumns: `repeat(${row.length}, minmax(40px, 1fr))`,
             }}
