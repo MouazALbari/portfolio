@@ -37,9 +37,9 @@ export const SkillDataProvider = ({
       animate={inView ? "visible" : "hidden"}
       custom={index}
       transition={{ delay: index * animationDelay }}
-      className="flex flex-col items-center gap-2"
+      className="flex flex-col items-center max-sm:gap-1 gap-2"
     >
-      <Icon size={size} className="max-sm:w-10 max-sm:h-10" color={color} />
+      <Icon size={size} className="max-lg:w-10 max-sm:w-6 max-sm:h-6 max-lg:h-10" color={color} />
     </motion.div>
   );
 };

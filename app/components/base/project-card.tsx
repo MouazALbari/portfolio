@@ -1,12 +1,13 @@
-import Link from "next/link";
+"use client";
 import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 type ProjectCardProps = {
   image?: string;
   title?: string;
   description?: string;
   link?: string;
-  skills?: string[];
   tools?: string[];
 };
 
@@ -17,48 +18,61 @@ export default function ProjectCard({
   link,
   tools = [],
 }: ProjectCardProps) {
-
   return (
-    <Link
-      href={link ?? ""}
-      target={link !== "/" ? "_blank" : undefined}
-      rel="noreferrer noopener"
-      className="group relative mb-30 !cursor-grab overflow-hidden rounded-2xl shadow-lg  hover:shadow-purple-500/30 transition-all duration-300"
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="w-full flex flex-col lg:flex-row items-center gap-8 lg:gap-16 py-8 px-4 lg:px-0"
     >
-      {/* ✅ صورة المشروع */}
-      <div className="overflow-hidden">
+      {/* Image */}
+      <motion.div
+     
+        className="relative w-full lg:w-1/2 h-60 lg:h-[30rem] bg-white/10 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow"
+      >
         <Image
-          src={image ?? ""}
-          alt={title ?? ""}
-          width={800}
-          height={600}
-          className="w-full h-52 object-contain object-top origin-top group-hover:scale-105 transition-transform duration-300"
+          src={image ?? "/placeholder.png"}
+          alt={title ?? "Project Image"}
+          fill
+          className="object-contain"
         />
-      </div>
+      </motion.div>
 
-      <div className="p-5 bg-gradient-to-b from-[#0f0f1a] to-[#1a1a2e]">
-        <h2 className="text-2xl font-semibold text-white group-hover:text-cyan-400 transition-colors">
+      {/* Content */}
+      <motion.div
+        initial={{ x: -20, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="flex flex-col gap-5 w-full lg:w-1/2  lg:text-left"
+      >
+        <h2 className="text-xl lg:text-5xl font-extrabold text-white tracking-wide">
           {title}
         </h2>
-        <p className="mt-3  text-sm text-gray-300 line-clamp-5">
+
+        <p className="text-gray-300 leading-relaxed text-sm lg:text-xl">
           {description}
         </p>
 
-        {tools.length > 0 && (
-          <div className="mt-4 h-20">
-            <div className="flex flex-wrap gap-2">
-              {tools.map((tool, idx) => (
-                <span
-                  key={idx}
-                  className="px-3 py-1 text-xs rounded-full bg-cyan-700/30 text-cyan-300 border border-cyan-500/40"
-                >
-                  {tool}
-                </span>
-              ))}
-            </div>
-          </div>
-        )}
-      </div>
-    </Link>
+        <div className="flex flex-wrap gap-3  lg:justify-start">
+          {tools?.map((tool, idx) => (
+            <span
+              key={idx}
+              className="px-4 py-1 bg-white/10 border border-white/20 rounded-full text-sm text-white/90 hover:bg-white/20 transition"
+            >
+              {tool}
+            </span>
+          ))}
+        </div>
+
+        <Link
+          href={link ?? "#"}
+          target="_blank"
+          className="mt-4 hidden lg:flex w-16 h-16  duration-400 ease-in-out  hover:animate-pulse items-center justify-center rounded-full text-4xl border-2 border-white text-white font-bold  cursor-pointer hover:scale-105 hover:border-4 transition-all"
+        >
+          ↗
+        </Link>
+      </motion.div>
+    </motion.div>
   );
 }

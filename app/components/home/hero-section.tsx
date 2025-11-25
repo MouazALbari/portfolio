@@ -17,7 +17,7 @@ const HeroSection = () => {
         autoPlay
         muted
         loop
-        className="rotate-180 absolute top-[-320px] left-0 w-full h-screen object-cover"
+        className="rotate-180 absolute max-lg:opacity-20 max-lg:top-[-20%] top-[-60%] left-0 w-full h-screen object-cover"
       >
         <source src="/videos/blackhole.webm" type="video/webm" />
       </video>
@@ -44,6 +44,7 @@ const HeroSection = () => {
             variants={slideInFromLeft(0.5)}
             className="flex flex-col gap-6  text-4xl lg:text-6xl font-extrabold text-white max-w-[700px] w-auto h-auto leading-tight"
           >
+            
             <span>
               Building{" "}<br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -58,9 +59,7 @@ const HeroSection = () => {
             variants={slideInFromLeft(0.8)}
             className="text-lg text-gray-300 my-3 max-w-[700px] leading-relaxed"
           >
-            I’m Mouaz Albari a Frontend Engineer with 5+ years of experience building 
-            high-performing web apps using React, Next.js, and modern 
-            JavaScript ecosystems. 
+           I help businesses grow with fast, modern, and visually stunning websites using Next.js, React, and Tailwind.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -78,7 +77,7 @@ const HeroSection = () => {
               href="#contact"
               className="py-3 px-6 border border-gray-400 text-gray-200 rounded-lg hover:bg-white hover:text-black transition"
             >
-              Contact Me
+            Contact
             </a>
           </motion.div>
         </div>

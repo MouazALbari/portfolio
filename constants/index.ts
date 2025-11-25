@@ -105,8 +105,8 @@ export const PROJECTS: ProjectCardProps[] = [
     title: "RAK Government Project",
     description:
       "A digital transformation project automating essential services for Ras Al Khaimah government. I implemented secure, scalable solutions for document management, service requests, and public accessibility, ensuring usability, performance, and compliance with modern standards of e-government systems.",
-    image: "/projects/rak.webp",
-    link: "/",
+    image: "/projects/rakk.webp",
+    link: "https://ec.rak.ae/ar",
     tools: ["Next.js", "Tailwind CSS"],
   },
   {
@@ -115,7 +115,7 @@ export const PROJECTS: ProjectCardProps[] = [
       "The public-facing Deema website crafted to attract merchants and customers. I built it with SEO optimization, responsive design, and performance improvements, ensuring seamless integration with Next.js, Tailwind CSS, and deployment workflows on Vercel for stability.",
     image: "/projects/deema-website.png",
     link: "https://deema.me",
-    tools: ["Next.js", "Tailwind CSS", "Vercel", "Gsap", "Framer Motion","three.js"],
+    tools: ["Next.js", "Tailwind CSS","three.js"],
   },
   {
     title: "Deema – Customer Portal",
@@ -123,7 +123,7 @@ export const PROJECTS: ProjectCardProps[] = [
       "A customer-facing platform for Deema’s Buy Now, Pay Later system. I implemented account management, payment tracking, and offers exploration. The portal delivers an intuitive, responsive experience powered by React, Tailwind, Zustand, and React Query for state synchronization.",
     image: "/projects/deema-customer.png",
     link: "https://customer.deema.me/",
-    tools: ["React", "Tailwind CSS", "React Query", "zustand","socket"],
+    tools: ["React", "Tailwind CSS", "React Query"],
   },
   {
     title: "Deema – Payment Portal",
@@ -139,7 +139,7 @@ export const PROJECTS: ProjectCardProps[] = [
       "A robust admin dashboard enabling the management of users, merchants, and system operations. I built advanced analytics, data visualization, and role-based access features, ensuring a secure and efficient system backed by React, Material UI, Redux, and Chart.js.",
     image: "/projects/admin.png",
     link: "https://qa-new-admin.deema.me/auth/login",
-    tools: ["React", "Material UI", "Chart.js", "REST APIs", "Redux"],
+    tools: ["React", "Material UI", "Chart.js",  "Redux"],
   },
   {
     title: "Deema – Merchant Portal",
@@ -147,7 +147,7 @@ export const PROJECTS: ProjectCardProps[] = [
       "A dedicated portal for merchants to manage products, view transactions, and integrate BNPL services. I optimized workflows for usability, scalability, and speed, leveraging React, Material UI, REST APIs, Redux, and Chart.js to create a seamless merchant experience.",
     image: "/projects/merchant.png",
     link: "https://qa-new-merchant.deema.me/auth/login",
-    tools: ["React", "Material UI", "Chart.js", "REST APIs", "Redux"],
+    tools: ["React", "Material UI", "Chart.js", "Redux"],
   },
   {
     title: "I Tabib",
@@ -155,6 +155,6 @@ export const PROJECTS: ProjectCardProps[] = [
       "A medical consultation application, where you can book a private appointment with doctors in any specialty you need. You can also upload your medical history within your profile and join the appointment with your doctor by text-chatting, audio-calling, or video-calling. Additionally there is a standalone application for doctors, allowing them to enter and attend their appointments, prescribe the appropriate medications for each patient, and follow up with the patient's medical history through the app.",
     image: "/projects/itabib-app.png",
     link: "https://itabib.darsoft.net/patient-ui/sign-in",
-    tools: ["React", "Css", "Sass", "REST APIs", "Redux","socket"],
+    tools: ["React", "Sass", "REST APIs", "Redux",],
   },
 ] as const;

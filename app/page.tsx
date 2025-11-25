@@ -9,6 +9,7 @@ import AboutSection from "./components/home/about-me";
 import PortfolioSection from "./components/home/portfolio";
 import ContactSection from "./components/home/contact-section";
 import { Skills } from "./components/home/skills";
+import ServicesSection from "./components/home/services-section";
 
 
 export default function Home() {
@@ -38,6 +39,7 @@ useEffect(() => {
         className="flex flex-col " 
       >
         <HeroSection />
+        <ServicesSection/>
         <AboutSection />
         <Skills />
 
