@@ -17,7 +17,7 @@ const HeroSection = () => {
         autoPlay
         muted
         loop
-        className="rotate-180 absolute max-lg:opacity-20 max-lg:top-[-20%] top-[-60%] left-0 w-full h-screen object-cover"
+        className="rotate-180 absolute max-lg:opacity-20 max-lg:top-[-20%] top-[-50%] left-0 w-full h-screen object-cover"
       >
         <source src="/videos/blackhole.webm" type="video/webm" />
       </video>

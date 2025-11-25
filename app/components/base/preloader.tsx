@@ -42,15 +42,7 @@ export default function Preloader() {
             transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
           />
 
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="relative z-10 text-2xl lg:text-4xl cursive md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 drop-shadow-lg text-center"
-          >
-            👋 Hey there!  ,<span className="cursive"> {"I'm Mouaz"}</span><br />
-            <span className="text-white text-2xl my-4"> </span>
-          </motion.h1>
+        
 
           <div className="relative z-10 mt-12 w-40 h-40 flex items-center justify-center">
             {/* النص يبقى ثابت */}
@@ -97,14 +89,7 @@ export default function Preloader() {
             </motion.div>
           </div>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.8, duration: 1 }}
-            className="relative z-10 mt-8 text-lg md:text-xl text-gray-300 tracking-widest"
-          >
-            🚀 Crafting your cosmic experience...
-          </motion.p>
+         
 
           {progress === 100 && (
             <motion.div
