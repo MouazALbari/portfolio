@@ -40,7 +40,7 @@ export default function AboutSection() {
           viewport={{ once: true }}
           className="text-lg md:text-xl text-gray-300 leading-relaxed mt-10 max-w-3xl mx-auto"
         >
-          I'm{" "}
+          {" I'm"}
           <span className="font-semibold text-purple-300">
             Mouaz Albari
           </span>
